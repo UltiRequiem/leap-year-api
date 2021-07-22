@@ -7,7 +7,7 @@ const PORT = 2006;
 
 app.get('/', (_req, res) => {
   res.send(
-    `Introduce the year in the url. Example: https://localhost:${PORT}/2020`
+    'Introduce the year in the url. Example: https://leap-year.ultirequiem.repl.co/2024'
   );
 });
 
@@ -19,4 +19,4 @@ app.get('/:year', (req, res) => {
     : res.json({ leapYear: false });
 });
 
-app.listen(PORT, () => console.log(`Listening on https://localhost:${PORT}`));
+app.listen(PORT, () => console.log('Running!'));
