@@ -1,7 +1,7 @@
 {
   "name": "leap-year-api",
   "version": "1.0.0",
-  "description": "An API to know if a year if leap or not.",
+  "description": "An API to know if a year is leap or not.",
   "main": "index.js",
   "scripts": {},
   "repository": {
