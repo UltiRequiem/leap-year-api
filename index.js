@@ -1,9 +1,8 @@
 /* eslint-disable no-unused-expressions */
 const express = require('express');
+const isLeapYear = require('check-leap-year');
 
 const app = express();
-
-const PORT = 2006;
 
 app.get('/', (_req, res) => {
   res.send(
@@ -12,11 +11,9 @@ app.get('/', (_req, res) => {
 });
 
 app.get('/:year', (req, res) => {
-  const year = parseInt(req.params.year, 10);
-
-  (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0
+  isLeapYear(parseInt(req.params.year, 10))
     ? res.json({ leapYear: true })
     : res.json({ leapYear: false });
 });
 
-app.listen(PORT, () => console.log('Running!'));
+app.listen(3000, () => console.log('Running!'));

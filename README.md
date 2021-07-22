@@ -3,7 +3,7 @@
 A leap year is a calendar year that contains an additional day added to
 keep the calendar year synchronized with the astronomical year or seasonal year.
 
-This API is made with express and is deployed on [Replit](http://repl.it).
+This API is made with ExpressJS and is deployed on [Replit](http://repl.it).
 
 ![Cover](./assets/cover.jpg)
 
