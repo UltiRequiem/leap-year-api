@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "An API to know if a year is leap or not.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "npx pm2 start index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/UltiRequiem/leap-year-api.git"
@@ -24,13 +26,14 @@
   },
   "devDependencies": {
     "eslint": "^7.31.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "prettier-eslint": "^12.0.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin": "^1.0.1",
     "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "pm2": "^5.1.0",
     "prettier": "^2.3.2",
+    "prettier-eslint": "^12.0.0",
     "prettier-plugin-jsdoc": "^0.3.23"
   }
 }
