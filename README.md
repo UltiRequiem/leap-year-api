@@ -25,11 +25,9 @@ getData('https://leap-year.ultirequiem.repl.co/2024').then((data) =>
 Or another one with Python on [test.py](./test.py)
 
 ```python
-import requests
+from requests import get
 
-data = requests.get("https://leap-year.ultirequiem.repl.co/2024").json()
-
-print(data)
+print(get("https://leap-year.ultirequiem.repl.co/2024").json())
 ```
 
 ### License
