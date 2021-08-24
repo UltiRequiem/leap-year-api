@@ -11,9 +11,7 @@ app.get('/', (_req, res) => {
 });
 
 app.get('/:year', (req, res) => {
-  isLeapYear(parseInt(req.params.year, 10))
-    ? res.json({ leapYear: true })
-    : res.json({ leapYear: false });
+    res.json({ leapYear: isLeapYear(parseInt(req.params.year, 10))})
 });
 
 app.listen(3000, () => console.log('Running!'));
