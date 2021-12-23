@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "An API to know if a year is leap or not.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "npx pm2 start index.js"
+    "start": "pm2 start index.js"
   },
   "repository": {
     "type": "git",
