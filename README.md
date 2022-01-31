@@ -1,35 +1,46 @@
 # Leap Year API
 
-A leap year is a calendar year that contains an additional day added to
-keep the calendar year synchronized with the astronomical year or seasonal year.
+> A leap year is a calendar year that contains an additional day added to keep
+> the calendar year synchronized with the astronomical year or seasonal year.
 
 This API is made with ExpressJS and is deployed on [Replit](http://repl.it).
 
-![Cover](./assets/cover.jpg)
-
 ## Usage
 
-You can see an example of usage with Nodejs on [test.js](./test.js)
+You can see usage examples in [examples/](./examples).
 
-```javascript
-async function getData(url) {
-  const data = await fetch(url);
-  return data.json();
+- [Ruby](./examples/test.rb)
+
+- [Python](./examples/test.py)
+
+- [Go](./examples/test.go)
+
+- [Node.js](./test.js)
+
+### Endpoints
+
+- `GET /`
+
+> https://leap-year.ultirequiem.repl.co
+
+Redirects to https://github.com/UltiRequiem/leap-year-api#endpoints
+
+- `GET /:number`
+
+> https://leap-year.ultirequiem.repl.co/2222
+
+```json
+{
+  "leapYear": false
 }
-
-getData('https://leap-year.ultirequiem.repl.co/2024').then((data) =>
-  console.log(data)
-);
 ```
 
-Or another one with Python on [test.py](./test.py)
+## Roadmap
 
-```python
-from requests import get
+- [ ] Rewrite this in [Rust](https://rust-lang.org)
 
-print(get("https://leap-year.ultirequiem.repl.co/2024").json())
-```
+- [ ] Buy a domain, eg. http://leap.fun
 
-### License
+## Licence
 
-[MIT](./LICENSE)
+Released under the MIT Licence.

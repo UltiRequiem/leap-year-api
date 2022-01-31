@@ -1,17 +1,15 @@
-const fetch = require('node-fetch');
+import test from 'ava';
+import request from 'supertest';
+import app from './app.js';
 
-const API = 'https://leap-year.ultirequiem.repl.co';
-const RANDOM_YEAR = Math.floor(Math.random() * (9999 - 1001) + 1001);
+const RANDOM_YEAR = Math.floor((Math.random() * (9999 - 1001)) + 1001);
 
-async function getData(url, year) {
-  const urlToFetch = `${url}/${year}`;
-  console.log(`Fetching ${urlToFetch} ...`);
-  const data = await fetch(urlToFetch);
-  return data.json();
-}
+test(`GET /${RANDOM_YEAR}`, async t => {
+	const response = await request(app).get(`/${RANDOM_YEAR}`).send();
 
-function init() {
-  getData(API, RANDOM_YEAR).then((data) => console.log(data));
-}
+	t.is(response.status, 200);
 
-init();
+	const data = JSON.parse(response.text);
+
+	t.assert('leapYear' in data);
+});
