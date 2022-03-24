@@ -1,4 +1,4 @@
-import { Application, Router, isLeapYear } from "./deps.ts";
+import { Application, isLeapYear, Router } from "./deps.ts";
 
 const app = new Application();
 
@@ -10,7 +10,7 @@ router.get("/", (context) => {
 
 router.get("/docs", (context) => {
   context.response.redirect(
-    "https://github.com/UltiRequiem/leap-year-api#endpoints"
+    "https://github.com/UltiRequiem/leap-year-api#endpoints",
   );
 });
 
