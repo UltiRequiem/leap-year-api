@@ -1,5 +1,8 @@
 # Leap Year API
 
+[![CI](https://github.com/UltiRequiem/leap-year-api/actions/workflows/ci.yaml/badge.svg)](https://github.com/UltiRequiem/leap-year-api/actions/workflows/ci.yaml)
+[![codecov](https://codecov.io/gh/ultirequiem/leap-year-api/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/leap-year-api)
+
 A leap year is a calendar year that contains an additional day added to keep the
 calendar year synchronized with the astronomical year or seasonal year.
 
