@@ -3,18 +3,6 @@
 > A leap year is a calendar year that contains an additional day added to keep
 > the calendar year synchronized with the astronomical year or seasonal year.
 
-## Usage
-
-You can see usage examples in [examples/](./examples).
-
-- [Ruby](./examples/test.rb)
-
-- [Python](./examples/test.py)
-
-- [Go](./examples/test.go)
-
-- [Node.js](./test.js)
-
 ## Endpoints
 
 ### `GET /`
@@ -41,6 +29,11 @@ Currently it returns 👇
 }
 ```
 
+## Usage
+
+You can see usage examples (in different languages) in [examples/](./examples)
+and in the [tests](./server_test.ts).
+
 ## Changelog
 
 - Jul 21, 2021: Start, using [Express](https://expressjs.com/) and CommonJS 🎉
@@ -49,7 +42,8 @@ Currently it returns 👇
 
 - Jan 31, 2022: Add usage example in different languages 👀
 
-- 24 Mar, 2022: Changed Node.js by [Deno](https://deno.land), using [Oak](https://github.com/oakserver/oak) 🐿
+- 24 Mar, 2022: Changed Node.js by [Deno](https://deno.land), using
+  [Oak](https://github.com/oakserver/oak) 🐿
 
 ## Licence
 
