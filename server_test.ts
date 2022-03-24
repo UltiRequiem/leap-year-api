@@ -20,7 +20,7 @@ Deno.test("Main", async (t) => {
     await request
       .get("/docs")
       .expect(
-        "Redirecting to https://github.com/UltiRequiem/leap-year-api#endpoints."
+        "Redirecting to https://github.com/UltiRequiem/leap-year-api#endpoints.",
       );
   });
 

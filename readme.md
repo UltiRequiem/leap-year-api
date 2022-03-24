@@ -17,21 +17,27 @@ Returns if the current year is leap.
 Currently(2022) it returns 👇
 
 ```json
-{
-  "result": false
-}
+{ "result": false }
 ```
 
 ### `GET /:year`
 
 > https://leap.deno.dev/2004
 
-Returns is `${YEAR}` is a leap year.
+Returns if `${YEAR}` is a leap year.
 
 ```json
-{
-  "result": true
-}
+{ "result": true }
+```
+
+### `GET /range/:start/:end`
+
+> https://leap.deno.dev/range/1/20
+
+A list with all the leap years from year `${START}` to `${END}`.
+
+```json
+{ "result": [4, 8, 12, 16, 20] }
 ```
 
 ## Usage
