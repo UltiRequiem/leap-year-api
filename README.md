@@ -3,8 +3,6 @@
 > A leap year is a calendar year that contains an additional day added to keep
 > the calendar year synchronized with the astronomical year or seasonal year.
 
-This API is made with ExpressJS and is deployed on [Replit](http://repl.it).
-
 ## Usage
 
 You can see usage examples in [examples/](./examples).
@@ -17,17 +15,15 @@ You can see usage examples in [examples/](./examples).
 
 - [Node.js](./test.js)
 
-### Endpoints
+## Endpoints
 
-- `GET /`
+### `GET /`
 
-> https://leap-year.ultirequiem.repl.co
+> https://leap.deno.dev
 
-Redirects to https://github.com/UltiRequiem/leap-year-api#endpoints
+Returns if the current year is leap.
 
-- `GET /:number`
-
-> https://leap-year.ultirequiem.repl.co/2222
+Currently it returns 👇
 
 ```json
 {
@@ -35,11 +31,25 @@ Redirects to https://github.com/UltiRequiem/leap-year-api#endpoints
 }
 ```
 
-## Roadmap
+### `GET /:year`
 
-- [ ] Rewrite this in [Rust](https://rust-lang.org)
+> https://leap.deno.dev/2004
 
-- [ ] Buy a domain, eg. http://leap.fun
+```json
+{
+  "leapYear": true
+}
+```
+
+## Changelog
+
+- Jul 21, 2021: Start, using [Express](https://expressjs.com/) and CommonJS 🎉
+
+- Dec 23, 2021: Move to ESM 🚀
+
+- Jan 31, 2022: Add usage example in different languages 👀
+
+- 24 Mar, 2022: Changed Node.js by [Deno](https://deno.land), using [Oak](https://github.com/oakserver/oak) 🐿
 
 ## Licence
 

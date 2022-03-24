@@ -1,8 +1,7 @@
 import requests
 import random
 
-RANDOM_YEAR = random.randint(200, 1000)
-API_URL = "https://leap-year.ultirequiem.repl.co"
+RANDOM_YEAR, API_URL = random.randint(200, 1000), "https://leap.deno.dev"
 
 data = requests.get(f"{API_URL}/{RANDOM_YEAR}").json()
 

@@ -16,7 +16,7 @@ type IsLeapYear struct {
 func main() {
 	random := rand.New(rand.NewSource(time.Now().UnixNano()))
 	randomNumber := random.Intn(1000)
-	apiURL := "https://leap-year.ultirequiem.repl.co/"
+	apiURL := "https://leap.deno.dev"
 
 	resp, _ := http.Get(fmt.Sprintf("%s%d", apiURL, randomNumber))
 
