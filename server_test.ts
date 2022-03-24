@@ -20,7 +20,7 @@ Deno.test("Main", async (t) => {
     await request
       .get("/docs")
       .expect(
-        "Redirecting to https://github.com/UltiRequiem/leap-year-api#endpoints.",
+        "Redirecting to https://github.com/UltiRequiem/leap-year-api#endpoints."
       );
   });
 
@@ -35,6 +35,6 @@ Deno.test("In range", async (t) => {
     const request = await superoak(app);
     await request
       .get("/range/1/20")
-      .expect(`{"result":${leapYearsInRange({ min: 1, max: 20 })}}`);
+      .expect(`{"result":[${leapYearsInRange({ min: 1, max: 20 })}]}`);
   });
 });
