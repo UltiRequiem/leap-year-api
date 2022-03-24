@@ -10,7 +10,7 @@ import (
 )
 
 type IsLeapYear struct {
-	leapYear bool
+	result bool
 }
 
 func main() {
@@ -26,5 +26,5 @@ func main() {
 
 	json.Unmarshal(body, &isLeapYear)
 
-	fmt.Printf("Is %d a leap year? %t\n", randomNumber, isLeapYear.leapYear)
+	fmt.Printf("Is %d a leap year? %t\n", randomNumber, isLeapYear.result)
 }

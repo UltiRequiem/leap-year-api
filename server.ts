@@ -1,5 +1,11 @@
 import { app } from "./app.ts";
 
-if (import.meta.main) {
-  await app.listen({ port: 3000 });
-}
+app.addEventListener("listen", ({ hostname, port, secure }) => {
+  console.log(
+    `Listening on: ${secure ? "https://" : "http://"}${
+      hostname ?? "localhost"
+    }:${port}`,
+  );
+});
+
+await app.listen({ port: 3000 });

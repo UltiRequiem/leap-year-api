@@ -7,12 +7,12 @@ import { app } from "./app.ts";
 Deno.test("Main", async (t) => {
   await t.step("True case", async () => {
     const request = await superoak(app);
-    await request.get("/2020").expect(`{"leapYear":true}`);
+    await request.get("/2020").expect(`{"result":true}`);
   });
 
   await t.step("False case", async () => {
     const request = await superoak(app);
-    await request.get("/2000").expect(`{"leapYear":false}`);
+    await request.get("/2000").expect(`{"result":false}`);
   });
 
   await t.step("Docs", async () => {
@@ -26,6 +26,9 @@ Deno.test("Main", async (t) => {
 
   await t.step("Library Case", async () => {
     const request = await superoak(app);
-    await request.get("/").expect(`{"leapYear":${isLeapYear()}}`);
+    await request.get("/").expect(`{"result":${isLeapYear()}}`);
   });
+});
+
+Deno.test("In range", () => {
 });
