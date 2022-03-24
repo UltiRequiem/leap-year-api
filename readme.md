@@ -48,10 +48,12 @@ and in the [tests](./server_test.ts).
 ## Related
 
 - [leap_year](https://deno.land/x/leap_year): Contains the core logic of this
-  API
+  API.
+
+> Includes a CLI Tool if you are interested.
 
 - [leap_years_utils](https://deno.land/x/leap_years_utils): The logic for the in
-  Range Section
+  Range Section.
 
 ## Changelog
 
