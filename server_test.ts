@@ -1,7 +1,6 @@
 import { superoak } from "https://deno.land/x/superoak@4.7.0/mod.ts";
 
 import { isLeapYear, leapYearsInRange } from "./deps.ts";
-
 import { app } from "./app.ts";
 
 Deno.test("Main", async (t) => {
