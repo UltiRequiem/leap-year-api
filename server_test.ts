@@ -12,7 +12,7 @@ Deno.test("Main", async (t) => {
 
   await t.step("False case", async () => {
     const request = await superoak(app);
-    await request.get("/2000").expect(`{"result":false}`);
+    await request.get("/2000").expect(`{"result":true}`);
   });
 
   await t.step("Docs", async () => {
