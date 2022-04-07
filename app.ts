@@ -2,9 +2,9 @@ import { Application, Router } from "./deps.ts";
 
 import {
   DocsMiddleware,
+  RangeMiddleware,
   RootMiddleware,
   YearMiddleware,
-  RangeMiddleware,
 } from "./middlewares.ts";
 
 const app = new Application();

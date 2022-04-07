@@ -6,7 +6,7 @@ export const RootMiddleware: RouterMiddleware<"/"> = (ctx) => {
 
 export const DocsMiddleware: RouterMiddleware<"/docs"> = (context) => {
   context.response.redirect(
-    "https://github.com/UltiRequiem/leap-year-api#endpoints"
+    "https://github.com/UltiRequiem/leap-year-api#endpoints",
   );
 };
 
@@ -15,7 +15,7 @@ export const YearMiddleware: RouterMiddleware<"/:year"> = (context) => {
 };
 
 export const RangeMiddleware: RouterMiddleware<"/range/:start/:end"> = (
-  context
+  context,
 ) => {
   context.response.body = {
     result: leapYearsInRange({
